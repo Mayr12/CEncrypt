@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    <link rel="icon" type="image/png" href="./ElementosGrficos/Vector.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9f1279dd5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="logo">
+        <img class="logoAlura" src="/ElementosGrficos/Vector.png" alt="logo" />
+    </header>
+
+    <div class="containerText">
+        <textarea class="textArea" name="encrypted" placeholder="Ingresa tu texto..."></textarea>
+        <div class="alertText"> 
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p class="instruction">Solo letras minusculas y sin acentos o caracteres especiales</p>  
+        </div>
+        <div class="buttons">
+            <input type="button" value="Encriptar" class="btnEncrypt" />
+            <input type="button" value="Desencriptar" class="btnDecrypt" />
+        </div>
+    </div>
+    <div class="boxResult">
+
+        <div class="result">
+
+            <div class="NoResultContainer">
+                <div class="containerImgNoResult">
+                    <img class="imgResult" src="/ElementosGrficos/imgResult.png" alt="imgNoResult" />
+                </div>
+                <div>
+                    <div class="boxNoFindText">
+                        <p>
+                            <center class="noFindText">Ningún texto fue encontrado</center>
+                        </p>
+                        <p>
+                            <center class="noFindText2">Ingresa el texto que desees encriptar o desencriptar</center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultContainer">
+                <div class="resultEncryptBox">
+                    <p class="resultEncryptText"></p>
+                </div>
+                <div class="boxBtnCopy">
+                    <button class="btnCopy">Copiar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/encrypt.js"></script>
+
+</body>
+
+</html>
